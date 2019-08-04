@@ -5,11 +5,11 @@
   "publisher": "DaGhostman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DaGhostman/RedDark-Pro/issues"
+    "url": "https://github.com/DaGhostman/vs-red-pro-theme/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DaGhostman/RedDark-Pro"
+    "url": "https://github.com/DaGhostman/vs-red-pro-theme"
   },
   "engines": {
     "vscode": "^1.12.0"
