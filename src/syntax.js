@@ -4,64 +4,6 @@ const colorConfig = require('./color.json')
 
 const configFactory = type => {
   const colorObj = colorConfig[type]
-  let tokenColorsBold
-
-  /**
-   * Overwrites for theme type "bold"
-   */
-  if (type === 'bold') {
-    tokenColorsBold = [
-      {
-        name: 'Markup: Heading',
-        scope: 'markup.heading',
-        settings: {
-          fontStyle: 'bold'
-        }
-      },
-      {
-        name: 'Markup: Strong',
-        scope: 'markup.bold',
-        settings: {
-          fontStyle: 'bold'
-        }
-      },
-      {
-        name: 'Sections',
-        scope: 'entity.name.section',
-        settings: {
-          fontStyle: 'bold'
-        }
-      },
-      {
-        name: 'CSS: Important Keyword',
-        scope: 'keyword.other.important',
-        settings: {
-          fontStyle: 'bold'
-        }
-      },
-      {
-        name: 'Functions',
-        scope: [
-          'entity.name.function',
-          'meta.require',
-          'support.function.any-method',
-          'variable.function'
-        ],
-        settings: {
-          fontStyle: 'bold',
-          foreground: colorObj['malibu']
-        }
-      },
-      {
-        name: 'Classes',
-        scope: 'entity.name.type.namespace',
-        settings: {
-          fontStyle: 'bold',
-          foreground: colorObj['chalky']
-        }
-      }
-    ]
-  }
 
   /**
    * Default theme settings
@@ -171,7 +113,7 @@ const configFactory = type => {
       name: 'Comments',
       scope: 'comment, punctuation.definition.comment',
       settings: {
-        foreground: colorObj['lightDark'],
+        foreground: colorObj['dark'],
         fontStyle: 'italic'
       }
     },
@@ -305,8 +247,8 @@ const configFactory = type => {
       }
     },
     {
-      name: "java instanceof",
-      scope: "keyword.operator.instanceof.java",
+      name: 'java instanceof',
+      scope: 'keyword.operator.instanceof.java',
       settings: {
         foreground: colorObj['purple']
       }
@@ -418,7 +360,8 @@ const configFactory = type => {
       name: 'comment',
       scope: 'comment.line.double-slash,comment.block.documentation',
       settings: {
-        fontStyle: 'italic'
+        fontStyle: 'italic',
+        foreground: colorObj['dark'],
       }
     },
     {
@@ -610,7 +553,7 @@ const configFactory = type => {
       name: 'Keywords',
       scope: 'keyword',
       settings: {
-        foreground: colorObj['purple']
+        foreground: colorObj['blueDeep']
       }
     },
     {
@@ -678,7 +621,23 @@ const configFactory = type => {
       name: 'Classes',
       scope: 'support.class, entity.name.type.class',
       settings: {
-        foreground: colorObj['chalky']
+        foreground: colorObj['chalky'],
+        fontStyle: 'italic',
+      }
+    },
+    {
+      name: 'Support type',
+      scope: 'constant.language.php',
+      settings: {
+          foreground: colorObj['purple'],
+          fontStyle: 'bold'
+      }
+    },
+    {
+      name: 'Class',
+      scope: 'support.class.php',
+      settings: {
+          foreground: colorObj['orangeLight']
       }
     },
     {
@@ -717,7 +676,21 @@ const configFactory = type => {
       name: 'Keyword Control',
       scope: 'keyword.control',
       settings: {
-        foreground: colorObj['purple']
+        foreground: colorObj['blueDeep']
+      }
+    },
+    {
+      name: 'Keyword',
+      scope: 'keyword',
+      settings: {
+        foreground: colorObj['blueDeep']
+      }
+    },
+    {
+      name: 'Storage',
+      scope: 'storage',
+      settings: {
+        foreground: colorObj['blueDeep']
       }
     },
     {
@@ -745,7 +718,7 @@ const configFactory = type => {
       name: 'Storage',
       scope: 'storage',
       settings: {
-        foreground: colorObj['purple']
+        foreground: colorObj['blueDeep']
       }
     },
     {
@@ -782,7 +755,7 @@ const configFactory = type => {
       name: 'Support type',
       scope: 'support.type.property-name',
       settings: {
-        foreground: colorObj['lightWhite']
+        foreground: colorObj['pink']
       }
     },
     {
@@ -807,8 +780,15 @@ const configFactory = type => {
       }
     },
     {
-      name: 'Strings, Inherited Class',
-      scope: 'string, entity.other.inherited-class',
+      name: 'Strings',
+      scope: 'string,punctuation.definition.string.begin,punctuation.definition.string.end',
+      settings: {
+        foreground: colorObj['greenVivid'],
+      }
+    },
+    {
+      name: 'Inherited Class',
+      scope: 'entity.other.inherited-class',
       settings: {
         foreground: colorObj['green']
       }
@@ -824,7 +804,8 @@ const configFactory = type => {
       name: 'Integers',
       scope: 'constant.numeric',
       settings: {
-        foreground: colorObj['whiskey']
+        foreground: colorObj['whiskey'],
+        fontStyle: 'italic',
       }
     },
     {
@@ -845,28 +826,29 @@ const configFactory = type => {
       name: 'Constants',
       scope: 'constant',
       settings: {
-        foreground: colorObj['whiskey']
+        foreground: colorObj['blueDeep'],
+        fontStyle: 'italic bold',
       }
     },
     {
       name: 'Constants',
       scope: 'punctuation.definition.constant',
       settings: {
-        foreground: colorObj['whiskey']
+        foreground: colorObj['blueDeep']
       }
     },
     {
       name: 'Tags',
       scope: 'entity.name.tag',
       settings: {
-        foreground: colorObj['coral']
+        foreground: colorObj['blueDarkSky']
       }
     },
     {
       name: 'Attributes',
       scope: 'entity.other.attribute-name',
       settings: {
-        foreground: colorObj['whiskey']
+        foreground: colorObj['blueDark']
       }
     },
     {
@@ -1081,7 +1063,7 @@ const configFactory = type => {
       name: 'Escape Characters',
       scope: 'constant.character.escape',
       settings: {
-        foreground: colorObj['fountainBlue']
+        foreground: colorObj['redDeep']
       }
     },
     {
@@ -1188,7 +1170,7 @@ const configFactory = type => {
       scope:
         'support.other.namespace.use.php,support.other.namespace.use-as.php,support.other.namespace.php,entity.other.alias.php,meta.interface.php',
       settings: {
-        foreground: colorObj['chalky']
+        foreground: colorObj['orangeLight']
       }
     },
     {
@@ -1239,7 +1221,7 @@ const configFactory = type => {
       scope:
         'meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php',
       settings: {
-        foreground: colorObj['malibu']
+        foreground: colorObj['greenVivid']
       }
     },
     {
@@ -1754,7 +1736,7 @@ const configFactory = type => {
       scope: ['wikiword.xi']
     },
     {
-      name: "language operators like '+', '-' etc",
+      name: 'language operators like '+', '-' etc',
       settings: {
         foreground: colorObj['invalid']
       },
@@ -1785,26 +1767,12 @@ const configFactory = type => {
   ]
 
   // add ability to generate custom syntax settings per layout type
-  switch (type) {
-    case 'bold':
-      return {
-        // consider name & scope for deduping
-        tokenColors: _.uniqBy(
-          [...tokenColorsBold, ...tokenColorsDefault],
-          setting => {
-            return setting.name + setting.scope
-          }
-        )
-      }
-    default:
-      return {
-        tokenColors: tokenColorsDefault
-      }
-  }
+    return {
+      tokenColors: tokenColorsDefault
+    }
 }
 
 module.exports = {
-  classic: configFactory('classic'),
-  bold: configFactory('bold'),
-  vivid: configFactory('vivid')
+  dark: configFactory('dark'),
+  light: configFactory('light'),
 }

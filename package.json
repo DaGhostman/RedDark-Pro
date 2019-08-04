@@ -1,16 +1,14 @@
 {
-  "name": "Material-theme",
-  "displayName": "One Dark Pro",
-  "description": "Atom's iconic One Dark theme for Visual Studio Code",
-  "version": "2.26.1",
-  "publisher": "zhuangtongfa",
+  "name": "red-dark",
+  "displayName": "RedDark Pro",
+  "version": "0.0.1",
+  "publisher": "DaGhostman",
   "bugs": {
-    "url": "https://github.com/Binaryify/OneDark-Pro/issues"
+    "url": "https://github.com/DaGhostman/RedDark-Pro/issues"
   },
-  "homepage": "https://binaryify.github.io/OneDark-Pro/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Binaryify/OneDark-Pro"
+    "url": "https://github.com/DaGhostman/RedDark-Pro"
   },
   "engines": {
     "vscode": "^1.12.0"
@@ -19,8 +17,7 @@
     "Themes"
   ],
   "scripts": {
-    "build": "node build.js",
-    "docs": "docsify serve docs"
+    "build": "node build.js"
   },
   "pre-commit": [
     "build"
@@ -32,37 +29,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "One Dark Pro",
+        "label": "RedDark Pro",
         "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro.json"
+        "path": "./themes/RedDark-Pro.json"
       },
       {
-        "label": "One Dark Pro Vivid",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-vivid.json"
-      },
-      {
-        "label": "One Dark Pro Bold",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-bold.json"
+        "label": "RedLight Pro",
+        "uiTheme": "vs",
+        "path": "./themes/RedLight-Pro.json"
       }
     ]
   },
-  "icon": "icon.png",
-  "keywords": [
-    "one dark",
-    "onedark",
-    "one dark pro",
-    "theme",
-    "atom"
-  ],
   "devDependencies": {
     "lodash": "^4.17.11",
-    "docsify-cli": "^4.3.0",
     "pre-commit": "^1.2.2"
-  },
-  "galleryBanner": {
-    "color": "#2d323b",
-    "theme": "dark"
   }
 }
