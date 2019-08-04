@@ -1,8 +1,9 @@
 {
-  "name": "red-dark",
-  "displayName": "RedDark Pro",
-  "version": "0.0.1",
+  "name": "red-pro-theme",
+  "displayName": "RedPro Theme",
+  "version": "1.0.0",
   "publisher": "DaGhostman",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DaGhostman/RedDark-Pro/issues"
   },
@@ -29,14 +30,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "RedDark Pro",
+        "label": "RedPro Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/RedDark-Pro.json"
+        "path": "./themes/RedPro-Dark.json"
       },
       {
-        "label": "RedLight Pro",
+        "label": "RedPro Light",
         "uiTheme": "vs",
-        "path": "./themes/RedLight-Pro.json"
+        "path": "./themes/RedPro-Light.json"
       }
     ]
   },

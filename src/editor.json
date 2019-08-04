@@ -1,6 +1,6 @@
 {
   "dark": {
-    "name": "RedDark Pro",
+    "name": "RedPro Dark",
     "type": "dark",
     "colors": {
       "activityBar.background": "#111112",
@@ -116,7 +116,7 @@
     }
   },
   "light": {
-    "name": "RedLight Pro",
+    "name": "RedPro Light",
     "type": "light",
     "colors": {
       "activityBar.background": "#DEDAD4",

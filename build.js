@@ -3,7 +3,7 @@ const editor = require('./src/editor.json')
 const syntax = require('./src/syntax')
 
 fs.writeFileSync(
-  './themes/RedDark-Pro.json',
+  './themes/RedPro-Dark.json',
   JSON.stringify(
     {
       ...editor['dark'],
@@ -15,7 +15,7 @@ fs.writeFileSync(
 )
 
 fs.writeFileSync(
-  './themes/RedLight-Pro.json',
+  './themes/RedPro-Light.json',
   JSON.stringify(
     {
       ...editor['light'],
