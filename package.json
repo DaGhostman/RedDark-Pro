@@ -44,5 +44,9 @@
   "devDependencies": {
     "lodash": "^4.17.11",
     "pre-commit": "^1.2.2"
+  },
+  "galleryBanner": {
+    "color": "#9c000d",
+    "theme": "dark"
   }
 }
