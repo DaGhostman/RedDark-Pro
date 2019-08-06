@@ -10,6 +10,13 @@ const configFactory = type => {
    */
   const tokenColorsDefault = [
     {
+      name: 'php dollar sign',
+      scope: 'punctuation.definition.variable',
+      settings: {
+        foreground: colorObj['redDeep']
+      }
+    },
+    {
       name: 'haskell variable generic-type',
       scope: 'variable.other.generic-type.haskell',
       settings: {
@@ -614,14 +621,14 @@ const configFactory = type => {
       name: 'Classes',
       scope: 'entity.name.type.namespace',
       settings: {
-        foreground: colorObj['chalky']
+        foreground: colorObj['orangeLight']
       }
     },
     {
       name: 'Classes',
       scope: 'support.class, entity.name.type.class',
       settings: {
-        foreground: colorObj['chalky'],
+        foreground: colorObj['orangeLight'],
         fontStyle: 'italic',
       }
     },
@@ -1213,7 +1220,8 @@ const configFactory = type => {
       scope:
         'storage.type.php,meta.other.type.phpdoc.php,keyword.other.type.php,keyword.other.array.phpdoc.php',
       settings: {
-        foreground: colorObj['chalky']
+        foreground: colorObj['chalky'],
+        fontStyle: 'italic'
       }
     },
     {
@@ -1237,7 +1245,7 @@ const configFactory = type => {
       scope:
         'support.constant.ext.php,support.constant.std.php,support.constant.core.php,support.constant.parser-token.php',
       settings: {
-        foreground: colorObj['whiskey']
+        foreground: colorObj['whiskey'],
       }
     },
     {
